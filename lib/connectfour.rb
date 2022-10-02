@@ -27,6 +27,7 @@ class ConnectFour
         puts "| #{col[0]} | #{col[1]} | #{col[2]} | #{col[3]} | #{col[4]} | #{col[5]} | #{col[6]} |"
         puts "row?: "
         selection = nil
+
         loop do
         selection = gets.chomp
         break if col.include?(selection) && selection != '*'
@@ -124,7 +125,6 @@ class ConnectFour
             end
             if basic_check_draw 
                 display_grid
-                print @grid
                 puts "It\'s a draw!"
                 break
             end

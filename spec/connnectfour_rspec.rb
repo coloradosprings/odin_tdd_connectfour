@@ -241,7 +241,7 @@ describe ConnectFour do
                 allow(game).to receive(:make_move).and_return(nil)
                 allow(game).to receive(:basic_check_draw).and_return(false)
                 allow(game).to receive(:check_win).and_return(nil)
-                allow(game).to receive(:display_grid).and_return(nil)
+                allow(game).to receive(:display_grid)
                 allow(game).to receive(:puts)
             end
             it 'iterates through half of the the block' do
@@ -255,7 +255,7 @@ describe ConnectFour do
                 allow(game).to receive(:make_move).and_return(nil)
                 allow(game).to receive(:basic_check_draw).and_return(true)
                 allow(game).to receive(:check_win).and_return(nil)
-                allow(game).to receive(:display_grid).and_return(nil)
+                allow(game).to receive(:display_grid)
                 allow(game).to receive(:puts)               
             end
             it 'iterates until half of the block' do
